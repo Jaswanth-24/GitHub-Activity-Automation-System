@@ -89,6 +89,19 @@ python project_creator.py
 python project_creator.py --force
 ```
 
+## Running Tests
+
+```bash
+python test_agents.py
+```
+
+Tests cover:
+- Idempotency logic — agent skips if already ran today
+- Force flag — bypasses daily guard
+- Repo selection — avoids last used repo
+- Fallback — works with single repo
+- Duplicate prevention — avoids already created projects
+
 ---
 
 ## Scheduling
@@ -152,11 +165,13 @@ GitHub-Activity-Automation-System/
 
 ├── project_creator.py     # Bot 2 - creates new repos
 
+├── test_agents.py         # Unit tests for idempotency and repo selection
+
 ├── config.yaml            # All configuration settings
 
 ├── state.json             # Tracks last run dates and repos
 
-├── .env                   # Contains GitHub token 
+├── .env                   # GitHub token 
 
 ├── .gitignore             # Excludes secrets and temp files
 
@@ -166,7 +181,7 @@ GitHub-Activity-Automation-System/
 
 │   └── automation.log     # Combined log output
 
-└── README.md   
+└── README.md  
    
 ---
 
