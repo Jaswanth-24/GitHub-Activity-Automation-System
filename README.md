@@ -16,8 +16,8 @@ A configurable automation system that keeps your GitHub profile active by making
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Jaswanth-24/github-automation.git
-cd github-automation
+git clone https://github.com/Jaswanth-24/GitHub-Activity-Automation-System.git
+cd GitHub-Activity-Automation-System
 ```
 
 ### 2. Create a virtual environment
@@ -146,7 +146,7 @@ Both agents check this flag at startup and exit cleanly.
 ---
 
 ## Project Structure
-GithubAutomation/
+GitHub-Activity-Automation-System/
 
 ├── daily_commit.py        # Bot 1 - makes daily commits
 
@@ -156,7 +156,7 @@ GithubAutomation/
 
 ├── state.json             # Tracks last run dates and repos
 
-├── .env                  
+├── .env                   # Contains GitHub token 
 
 ├── .gitignore             # Excludes secrets and temp files
 
