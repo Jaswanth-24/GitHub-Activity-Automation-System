@@ -1,0 +1,32 @@
+github:
+  target_file: "activity.log"
+  commit_count_min: 1
+  commit_count_max: 3
+  commit_messages:
+    - "chore: update activity log"
+    - "chore: daily progress update"
+    - "chore: automated commit"
+    - "chore: routine update"
+    - "chore: log update"
+
+project_creator:
+  languages:
+    - python
+    - javascript
+  simple_project_interval_days: 3
+  complex_project_interval_days: 7
+  project_ideas:
+    - "todo-cli"
+    - "weather-fetcher"
+    - "expense-tracker"
+    - "note-taking-app"
+    - "url-shortener"
+    - "password-generator"
+    - "quiz-app"
+    - "file-organizer"
+
+kill_switch: false
+
+logging:
+  log_file: "logs/automation.log"
+  level: "INFO"
